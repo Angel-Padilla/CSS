@@ -1,0 +1,16 @@
+.InLine{
+    position: relative;
+    display: inline;
+    vertical-align: middle;
+}
+.SpacedLeft{
+    position: absolute;
+    right: 0px;
+}
+.SpacedRight{
+    position: absolute;
+    left: 0px;
+}
+#MenusBar{
+    height: 20px;
+}

@@ -1,0 +1,12 @@
+<section>
+    <div>
+        <p>Vaccination</p>
+    </div>
+    <div>
+        <p>Database</p>
+        <p>Education</p>
+        <p>News</p>
+        <p>Regulation<p>
+            <input type="button" id="HoaxBuster" name="HoaxBuster" value="Hoax Buster">
+    </div>
+</section>
