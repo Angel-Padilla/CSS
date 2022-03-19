@@ -8,56 +8,69 @@
     <title>Vacúnate</title>
 </head>
 <body>
+<!--figuras geométricas-->
 <!--Sección de la barra de menús-->
-<section id="MenusBar">
-    <div class="InLine" id="VaccinationTitle">
-        Vaccination
+<nav id="MenusBar" style="padding-top: 40px;padding-bottom: 35px;">
+    <a class="SpacedButton" href="">
+        <div class="PageButton" id="VaccinationTitle">Vaccination</div>
+    </a>
+    <div class="InLine" id="ButtonBar">
+                <a href="" class="InLine" style="padding: 5px; color: rgb(108,122,147); margin-right: 5%; font-size: 18px;">Database</a>
+                <a href="" class="InLine"style="padding: 5px; color: rgb(108,122,147); margin-right: 5%; font-size: 18px;">Education</a>
+                <a href="" class="InLine"style="padding: 5px; color: rgb(108,122,147); margin-right: 5%; font-size: 18px;">News</a>
+                <a href="" class="InLine"style="padding: 5px; color: rgb(108,122,147); margin-right: 5%; font-size: 18px;">Regulation</a>
+                <a href="" class="InLine blueButton" style="margin-top:0%" id="Hoax">
+                    Hoax Buster
+                </a>
     </div>
-    <div class="InLine" id="ButtonBar" >
-                Database
-                Education
-                News
-                Regulation
-                Hoax Buster
-    </div>
-</section >
+</nav >
 <!--Sección de invitación y formulario-->
 <section id="InvitationForm">
+    <div class="triangulo" style="position: absolute; top: 60px; left: 7%;  border-left: 100px solid #f4f7fa;border-top: 100px solid transparent; border-bottom: 100px solid transparent; transform: rotate(90deg);"></div>
+    <div class="triangulo" style="position: absolute; top: 50%; left: 49%;  border-right: 120px solid #f4f7fa;border-top: 120px solid transparent; border-bottom: 120px solid transparent; transform: translate(-100%,-50%);"></div>
     <!--División de la izquierda-->
-    <div class="InLine " id="InvitationForm_Left">
+    <div style="width: 29%; margin: 10%; margin-top:2%" class="InLine " id="InvitationForm_Left">
         <h1>Fight Virus <br>With Vaccines</h1>
         <p>
             Let's stop this pandemic by killing the virus <br>
             with a vaccine, don't let yourself and your <br>
             family get infected
         </p>
-
         <!--NOTES-->
-        <div class="InLine Centered" id="PROS">
-                <img style="vertical-align: middle" src="../imgs/shield check.jpg" width="20px">
-                Best protection
-                <img style="vertical-align: middle" src="../imgs/yellow-star-icon-15.jpg" width="20px">
-                Selected vaccines
-        </div>
+        <div class="Centered" id="PROS" style="margin-left: 0%">
+                <img class="InLine Icon" src="../imgs/shield check.png" width="30px">
+                <h4 class="InLine" style="position:static; font-size: small;">Best protection</h4>
+                <img class="InLine Icon" src="../imgs/yellow-star-icon-15.png" width="30px">
+                <h4 class="InLine" style="position:static; font-size: small;">Selected vaccines</h4>        </div>
+        <h4>
+            <img src="../imgs/schedule.png" class="InLine Icon">
+            Schedule your Vaccinations
+        </h4>
     </div>
     <!--División de la derecha-->
-    <div class="InLine" id="NurseIMG">
-        <img src="../imgs/enfermera.jpg" width="700px">
-    </div>
+    <img class="InLine" id="NurseIMG" src="../imgs/enfermera.jpg" width="49%">
     <!--División del formulario-->
-    <div>
-        Schedule your Vaccinations
+    <div class="Superimposed" id="VaccinationForm">
         <form action="../JS/formulario.js">
-            <div class="InLine">
-                <label for="Location">Location</label>
-                <input type="text" name="Location" id="FormLocation">
+            <div class="InLine" style="margin-right:20px;">
+                <div style="margin-bottom: 10px">
+                    <img src="../imgs/location.png" class="InLine Icon">
+                    <label for="Location" class="InLine">Location</label>
+                </div>
+                <input type="text" name="Location" id="FormLocation" placeholder="Puebla">
             </div>
-            <div class="InLine">
-                <label for="Date">Date</label>
+            <div class="InLine" style="margin-right:20px;">
+                <div style="margin-bottom: 10px">
+                    <img src="../imgs/date.png" class="InLine Icon">
+                    <label for="Date" class="InLine">Date</label>
+                </div>
                 <input type="date" name="Date" id="FormDate">
             </div>
-            <div class="InLine">
-                <label for="VaccineName">Vaccine Type</label>
+            <div class="InLine" style="margin-right:20px;">
+                <div style="margin-bottom: 10px">
+                    <img src="../imgs/type.png" class="InLine Icon">
+                    <label for="VaccineName" class="InLine">Vaccine Type</label>
+                </div>
                 <select name="VaccineName", id="FormVaccine">
                     <option>Astra Zeneca</option>
                     <option>Sinovac</option>
@@ -70,34 +83,287 @@
             </div>
         </form>
     </div>
-    <div>
-
+    <div style="width: fit-content;margin-left: auto;margin-right: auto;margin-top: 4%;">
+        <img src="../imgs/brands.png" style="width: 1000px;">
     </div>
 
 </section>
 
 <!--Sección del por qué vacunarte-->
 <section>
-    <h1>Why should I vaccine?</h1>
-    <p>
-        In order to avoid any doubts about getting the <COVID-19>COVID-19</COVID-19> <br>
-        vaccine, identify the following 4 benefits of COVID-19 <br>
-        vaccination:
-    </p>
+    <div class="triangulo" style="position: absolute; top: 5%; left: 100%;  border-right: 120px solid #f4f7fa;border-top: 120px solid transparent; border-bottom: 120px solid transparent; transform: translate(-100%,-50%);"></div>
+    <div style="margin: 10%; margin-bottom: 5%; margin-top: 7%;">
+        <h2>Why should I vaccine?</h2>
+        <p>
+            In order to avoid any doubts about getting the <COVID-19>COVID-19</COVID-19> <br>
+            vaccine, identify the following 4 benefits of COVID-19 <br>
+            vaccination:
+        </p>
+    </div>
+
+    <div class="Centered">
+        <div class="NoteBox InLine" style="height: 246px;">
+            <img class="Icon" src="../imgs/minimize.png" style="padding-bottom: 20px; width: 60px;">
+            <h3>
+                Minimize the<br>
+                spread of viruses
+            </h3>
+            <p>
+                Vaccine has been proven <br>
+                effective to prevent someone <br>
+                from getting infected eith <br>
+                Coronavirus
+            </p>
+        </div>
+        <div class="NoteBox InLine" style="height: 246px;">
+            <img class="Icon" src="../imgs/antibodies.png" style="padding-bottom: 20px; width: 60px;">
+            <h3>
+                Forming<br>
+                anyibodies
+            </h3>
+            <p>
+                COVID-19 vaccine proven to <br>
+                help shape antibody <br>
+                response for immune system<br>
+                 
+            </p>
+        </div>
+        <div class="NoteBox InLine" style="height: 246px;">
+            <img class="Icon" src="../imgs/people.png" style="padding-bottom: 20px; width: 60px;">
+            <h3>
+                Protecting<br>
+                people nearby
+            </h3>
+            <p>
+                The benefits of COVID-19 <br>
+                vaccination are the vaccne <br>
+                that we get can aolse help <br>
+                protect people around us
+            </p>
+        </div>
+        <div class="NoteBox InLine" style="height: 246px;">
+            <img class="Icon" src="../imgs/immunity.png" style="padding-bottom: 20px; width: 60px;">
+            <h3>
+                Creating group<br>
+                immunity
+            </h3>
+            <p>
+                COVID-19 vaccination is also <br>
+                benefical dor creating group <br>
+                immunity.
+            </p>
+        </div>
+    </div>
 </section>
 <!--Sección de preparaciones-->
 <section>
-
+    <div class="triangulo" style="position: absolute; top: 17%; border-left: 120px solid #f4f7fa;border-top: 120px solid transparent; border-bottom: 120px solid transparent; transform: translate(0%,-50%);"></div>
+    <img class="InLine" id="chicaCubrebocas" src="../imgs/chica.png" width="40%">
+    <!--Seccion de la derecha (texto)-->
+    <div style="width: 39%; padding: 10%;" class="InLine">
+        <h2>Preparations Before Vaccine</h2>
+        <p>
+            The succes of vaccines is strongly influence by the <br>
+            strength of the body's immune system. Therefore, ther are <br>
+            several things that can be tried to make the COVID-19 <br>
+            vaccine work:
+        </p>
+        <div style="width: 100%;" class="NoteBox">
+            <h3>
+                <img src="../imgs/avoid.png" class="InLine Icon" style="width: 25px; margin-right: 20px">
+                Avoid alcoholic beverages
+            </h3>
+        </div>
+        <div style="width: 100%; margin-top: 20px;" class="NoteBox">
+            <h3>
+                <img src="../imgs/stress.png" class="InLine Icon" style="width: 25px; margin-right: 20px">
+                Avoid stress
+            </h3>
+            <p>
+                Stress as a profoud effect on immune work. <br>
+                Moreover, prolonged stress can increase cortisol <br>
+                production and oxidative stress in the body.
+            </p>
+        </div>
+        <div style="width: 100%; margin-top: 20px;" class="NoteBox">
+            <h3>
+                <img src="../imgs/food.png" class="InLine Icon" style="width: 25px; margin-right: 20px">
+                Eat healthy food
+            </h3>
+        </div>
+        <div style="width: 100%; margin-top: 20px;" class="NoteBox">
+            <h3>
+                <img src="../imgs/sleep.png" class="InLine Icon" style="width: 25px; margin-right: 20px">
+                Get enough sleep
+            </h3>
+        </div>
+        <div style="width: 100%; margin-top: 20px;" class="NoteBox">
+            <h3>
+                <img src="../imgs/excercise.png" class="InLine Icon" style="width: 25px; margin-right: 20px">
+                exercise or physical activity
+            </h3>
+        </div>
+    </div>
 </section>
 
 <!--Sección de contacto de emergencia-->
-<section>
+<section id="EmergencyContacts">
+    <div class="triangulo" style="position: absolute; top: 2%; left: 100%;  border-right: 120px solid #f4f7fa;border-top: 120px solid transparent; border-bottom: 120px solid transparent; transform: translate(-100%,-50%);"></div>
+    <div style="width: 39%; margin: 10%; margin-top: 0%;" class="InLine">
+        <h2 style="margin-top: 0%;">Emergency contact</h2>
+        <p>
+            Contact one of the contacts below if you or your family feel <br>
+            unwell and have similar symproms such as COVID-19, make <br>
+            sure you also take care of yourself before reporting to us:
+        </p>
+        <div style="width: fit-content; padding-top:10%; margin: auto; margin-top: 20%;">
+            <div class="NoteBox InLine">
+                <div>
+                    <img src="../imgs/call.png" class="InLine Icon" style="margin-right: 15px; width: 60px;">
+                    <div class="InLine">
+                        <h3>Call</h3>
+                        <p>021 123 145 14</p>
+                    </div>
 
+                </div>
+                <a href="" class="Centered blueButton InLine">
+                    Call Now
+                </a>
+            </div>
+            <div class="NoteBox InLine">
+                <div>
+                    <img src="../imgs/chat.png" class="InLine Icon" style="margin-right: 15px; width: 60px;">
+                    <div class="InLine">
+                        <h3>Chat</h3>
+                        <p>021 123 145 14</p>
+                    </div>
+                    
+                </div>
+                <a href="" class="Centered blueButton InLine">
+                   Chat Now
+                </a>
+            </div>
+        </div>
+        <div style="width: fit-content; padding-top:10%; margin: auto;">
+            <div class="NoteBox InLine">
+                <div>
+                    <img src="../imgs/video.png" class="InLine Icon" style="margin-right: 15px; width: 60px;">
+                    <div class="InLine">
+                        <h3>Video Call</h3>
+                        <p>021 123 145 14</p>
+                    </div>
+                    
+                </div>
+                <a href="" class="Centered blueButton InLine">
+                    Video Call Now
+                </a>
+            </div>
+            <div class="NoteBox InLine">
+                <div>
+                    <img src="../imgs/message.png" class="InLine Icon" style="margin-right: 15px; width: 60px;">
+                    <div class="InLine">
+                        <h3>Message</h3>
+                        <p>021 123 145 14</p>
+                    </div>
+                    
+                </div>
+                <a href="" class="Centered blueButton InLine">
+                    Message Now
+                </a>
+            </div>
+        </div>
+        
+    </div>
+    <img style="width: 40%;" class="InLine" id="Doctor" src="../imgs/doc.png">
 </section>
 
 <!--Sección de pie de página-->
-<section>
+<section style="width: 100%; height: 400px; background-color: rgb(239, 243, 254);"id="Foot">
+    <div style="position: relative; width: 1280px; height: 100%; margin: auto; background-color: rgb(239, 243, 254);">
+        <div class="triangulo" style="z-index: 1; position: absolute; top: 100%; left: 80%;  border-right: 120px solid transparent;border-left: 120px solid transparent; border-bottom: 120px solid #e2e9f9; transform: translate(-50%,-100%);"></div>
+        <div class="InLine PageButton" style="margin-top: 3%;">
+            <a href="">Vaccination</a>
+            <p>
+                Our goal is to help the<br>
+                world free from the <br>
+                ongoing pandemic
+            </p>
+        </div>
+        <div class="InLine" style="position: absolute; right: 5%; margin-top: 3%;">
+            <div class="InLine">
+                <ul>
+                    <li>
+                        <h3>About</h3>
+                    <li>
+                        <a href="">
+                            <p>About Us</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Features</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>News & Blog</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="InLine">
+                <ul>
+                    <li>
+                        <h3>Company</h3>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>How we work?</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Capital</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Security</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="InLine">
+                <ul>
+                    <li>
+                        <h3>Support</h3>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>FAQ's</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Support Center</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Contact Us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <p class="InLine" style="position: absolute; left: 5%; top: 90%; margin: 0%">@2021 Vaccination. All rights reserved</p>
+        <div class="InLine" style="z-index: 2; position: absolute; right: 10%; top: 90%">
+            <a href="" style="margin-right: 20px; ">Terms & Agreements</a>
+            <a href="">Privacy Policy</a>
+        </div>
 
+    </div>
 </section>
 </body>
 </html>

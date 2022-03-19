@@ -1,16 +1,144 @@
-.InLine{
+
+body{
+    /*background-color: rgb(247, 247, 247);*/
+    margin: 0%;
+    width: 100%;
+}
+nav, section {
     position: relative;
-    display: inline;
+    width: 100%;
+}
+section{
+    width: 1280px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+}
+a:hover.blueButton, a:hover.blueButton#Hoax{
+    background-color: rgb(44,76,203);
+    color: rgb(254,255,255)
+}
+h4{
+    position: absolute;
+    top: 60%;
+    left: 9%;
+}
+h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+ul{
+    list-style: none;
+}
+input{
+    background-color:rgba(241, 236, 236, 0);
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+select{
+    background-color:rgba(241, 236, 236, 0);
+    border-width: 0px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.Centered{
+    width:fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blueButton, .blueButton#Hoax{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 6px;
+    background-color: rgb(240,245,254);
+    color: rgb(55,87,212);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 15px;
+    width: 120px;
+}
+.SpacedButton{
+    padding: 5px;
+}
+.PageButton{
+    color: rgb(55,87,212);
+    display: inline-block;
+    position: relative;
+    left: 5%;
+    font-size: 30px;
+}
+.InLine{
+    display: inline-block;
     vertical-align: middle;
 }
-.SpacedLeft{
-    position: absolute;
-    right: 0px;
+.Superimposed{
+    z-index: 1;
 }
-.SpacedRight{
+.triangulo {
+    width: 0; 
+    height: 0; 
+}
+#ButtonBar{
+    display: inline-block;
     position: absolute;
-    left: 0px;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 700px;
 }
 #MenusBar{
-    height: 20px;
+    z-index: 2;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(247, 247, 247, 0.85);
+    padding: 20px;
+}
+#VaccinationForm{
+    position: absolute;
+    top: 68%;
+    left: 9%;
+    background-color: rgba(253, 253, 253, 0.85);
+    border-radius: 5px;
+    padding: 30px;
+}
+.NoteBox{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 3px solid rgb(248, 249, 252);
+    border-radius: 10px;
+}
+.Icon{
+    border-radius: 5px;
+    width: 30px;
+}
+/*Text formatting*/
+h1, h2, h3, h4, input, select, input::placeholder{
+    color: rgb(30,62,115);
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    font-size: 18px;
+}
+p, label{
+    color: rgb(108,122,147);
+}
+label{
+    display: inline-block;
 }
